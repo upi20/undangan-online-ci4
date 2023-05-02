@@ -82,9 +82,9 @@ define('SITE_NAME', 'Undangan V3'); ///NAMA WEBSITE
 // =========== production mode ============
 // //LINK DOMAIN WITH URL
 define('SITE_UTAMA', 'http://ci4.test');
-define('SITE_UNDANGAN', 'http://ci4.test');
-define('SITE_ADMIN', 'http://ci4.test');
-define('SITE_BUKUTAMU', 'http://ci4.test');
+define('SITE_UNDANGAN', 'http://u.ci4.test');
+define('SITE_ADMIN', 'http://admin.ci4.test');
+define('SITE_BUKUTAMU', 'http://bukutamu.ci4.test');
 
 //DOMAIN ONLY
 //define('DOMAIN_UTAMA', 'ci4.test');
@@ -95,9 +95,9 @@ define('SITE_BUKUTAMU', 'http://ci4.test');
 //
 define('DOMAIN_UTAMA', 'ci4.test');
 define('DOMAIN_UTAMA_WWW', 'ci4.test'); //PAKE WWW
-define('DOMAIN_UNDANGAN', 'ci4.test');
-define('DOMAIN_ADMIN', 'ci4.test');
-define('DOMAIN_BUKUTAMU', 'ci4.test');
+define('DOMAIN_UNDANGAN', 'u.ci4.test');
+define('DOMAIN_ADMIN', 'admin.ci4.test');
+define('DOMAIN_BUKUTAMU', 'bukutamu.ci4');
 
 //base url dinamis
 $base = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']) : 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']);

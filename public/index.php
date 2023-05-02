@@ -1,5 +1,4 @@
 <?php
-
 // Check PHP version.
 $minPhpVersion = '7.4'; // If you update this, don't forget to update `spark`.
 if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
