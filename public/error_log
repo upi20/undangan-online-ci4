@@ -1,0 +1,21 @@
+[02-May-2023 21:25:09 Asia/Jakarta] PHP Warning:  Undefined array key "HTTP_HOST" in /home1/greenedu/iseplutpinur/undangan/app/Config/Constants.php on line 97
+[02-May-2023 21:25:09 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: CodeIgniter\HTTP\IncomingRequest::determineHost(): Return value must be of type string, null returned in /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php:503
+Stack trace:
+#0 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(468): CodeIgniter\HTTP\IncomingRequest->determineHost()
+#1 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(232): CodeIgniter\HTTP\IncomingRequest->setPath()
+#2 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(178): CodeIgniter\HTTP\IncomingRequest->detectURI()
+#3 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/Services.php(545): CodeIgniter\HTTP\IncomingRequest->__construct()
+#4 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/Services.php(501): CodeIgniter\Config\Services::incomingrequest()
+#5 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/BaseService.php(252): CodeIgniter\Config\Services::request()
+#6 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#7 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/Services.php(497): CodeIgniter\Config\BaseService::getSharedInstance()
+#8 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/BaseService.php(252): CodeIgniter\Config\Services::request()
+#9 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/Services.php(265): CodeIgniter\Config\BaseService::__callStatic()
+#10 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/BaseService.php(252): CodeIgniter\Config\Services::exceptions()
+#11 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#12 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/Services.php(261): CodeIgniter\Config\BaseService::getSharedInstance()
+#13 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/Config/BaseService.php(252): CodeIgniter\Config\Services::exceptions()
+#14 /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/CodeIgniter.php(186): CodeIgniter\Config\BaseService::__callStatic()
+#15 /home1/greenedu/iseplutpinur/undangan/spark(83): CodeIgniter\CodeIgniter->initialize()
+#16 {main}
+  thrown in /home1/greenedu/iseplutpinur/undangan/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php on line 503

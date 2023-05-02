@@ -81,17 +81,17 @@ define('SITE_NAME', 'Undangan V3'); ///NAMA WEBSITE
 
 // =========== production mode ============
 // //LINK DOMAIN WITH URL
-define('SITE_UTAMA', getenv('SITE_UTAMA'));
-define('SITE_UNDANGAN', getenv('SITE_UNDANGAN'));
-define('SITE_ADMIN', getenv('SITE_ADMIN'));
-define('SITE_BUKUTAMU', getenv('SITE_BUKUTAMU'));
+define('SITE_UTAMA', "https://undangonline.pw");
+define('SITE_UNDANGAN', "https://u.undangonline.pw");
+define('SITE_ADMIN', "https://admin.undangonline.pw");
+define('SITE_BUKUTAMU', "https://bukutamu.undangonline.pw");
 
 //DOMAIN ONLY
-define('DOMAIN_UTAMA', getenv('DOMAIN_UTAMA'));
-define('DOMAIN_UTAMA_WWW', getenv('DOMAIN_UTAMA_WWW'));
-define('DOMAIN_UNDANGAN', getenv('DOMAIN_UNDANGAN'));
-define('DOMAIN_ADMIN', getenv('DOMAIN_ADMIN'));
-define('DOMAIN_BUKUTAMU', getenv('DOMAIN_BUKUTAMU'));
+define('DOMAIN_UTAMA', "undangonline.pw");
+define('DOMAIN_UTAMA_WWW', "undangonline.pw");
+define('DOMAIN_UNDANGAN', "u.undangonline.pw");
+define('DOMAIN_ADMIN', "admin.undangonline.pw");
+define('DOMAIN_BUKUTAMU', "bukutamu.undangonline.pw");
 
 //base url dinamis
 $base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . ("://" . $_SERVER['HTTP_HOST']) . str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
