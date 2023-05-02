@@ -81,23 +81,17 @@ define('SITE_NAME', 'Undangan V3'); ///NAMA WEBSITE
 
 // =========== production mode ============
 // //LINK DOMAIN WITH URL
-define('SITE_UTAMA', 'http://ci4.test');
-define('SITE_UNDANGAN', 'http://u.ci4.test');
-define('SITE_ADMIN', 'http://admin.ci4.test');
-define('SITE_BUKUTAMU', 'http://bukutamu.ci4.test');
+define('SITE_UTAMA', getenv('SITE_UTAMA'));
+define('SITE_UNDANGAN', getenv('SITE_UNDANGAN'));
+define('SITE_ADMIN', getenv('SITE_ADMIN'));
+define('SITE_BUKUTAMU', getenv('SITE_BUKUTAMU'));
 
 //DOMAIN ONLY
-//define('DOMAIN_UTAMA', 'ci4.test');
-//define('DOMAIN_UTAMA_WWW', 'www.ci4.test'); //PAKE WWW
-//define('DOMAIN_UNDANGAN', 'undangan.ci4.test');
-//define('DOMAIN_ADMIN', 'admin.ci4.test');
-//define('DOMAIN_BUKUTAMU', 'bukutamu.ci4.test');
-//
-define('DOMAIN_UTAMA', 'ci4.test');
-define('DOMAIN_UTAMA_WWW', 'ci4.test'); //PAKE WWW
-define('DOMAIN_UNDANGAN', 'u.ci4.test');
-define('DOMAIN_ADMIN', 'admin.ci4.test');
-define('DOMAIN_BUKUTAMU', 'bukutamu.ci4');
+define('DOMAIN_UTAMA', getenv('DOMAIN_UTAMA'));
+define('DOMAIN_UTAMA_WWW', getenv('DOMAIN_UTAMA_WWW'));
+define('DOMAIN_UNDANGAN', getenv('DOMAIN_UNDANGAN'));
+define('DOMAIN_ADMIN', getenv('DOMAIN_ADMIN'));
+define('DOMAIN_BUKUTAMU', getenv('DOMAIN_BUKUTAMU'));
 
 //base url dinamis
 $base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . ("://" . $_SERVER['HTTP_HOST']) . str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
