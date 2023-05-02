@@ -1,0 +1,17 @@
+LOGIN ADMIN
+admin.localhost/login ATAU admin.domain.com/login
+
+EMAIL: admin@gmail.com
+PASSWORD: admin123
+###
+123
+LOGIN USER
+localhost/login ATAU domain.com/login
+
+EMAIL: leslar@gmail.com
+PASSWORD: leslar123
+
+NOTE:
+FOR LOCALHOSTS
+The website uses the codeigniter 4 framework, make sure you understand how to run a codeigniter 4 project
+on localhost, because codeigniter 4 is different from codeigniter 3.

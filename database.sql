@@ -65,7 +65,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `email`, `nama_lengkap`, `created_at`) VALUES
-(1, 'admin', '25d55ad283aa400af464c76d713c07ad', 'admin@gmail.com', 'Kuat Nikah', '2020-08-27 04:38:43');
+(1, 'admin', '0192023a7bbd73250516f069df18b500', 'admin@gmail.com', 'Kuat Nikah', '2020-08-27 04:38:43');
 
 -- --------------------------------------------------------
 
