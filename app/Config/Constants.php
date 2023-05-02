@@ -100,6 +100,6 @@ define('DOMAIN_ADMIN', 'admin.ci4.test');
 define('DOMAIN_BUKUTAMU', 'bukutamu.ci4');
 
 //base url dinamis
-$base = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']) : 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']);
+$base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . ("://" . $_SERVER['HTTP_HOST']) . str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 
 defined('BASE') || define('BASE', $base);
