@@ -2,7 +2,7 @@ LOGIN ADMIN
 admin.localhost/login ATAU admin.domain.com/login
 
 EMAIL: admin@gmail.com
-PASSWORD: admin123
+PASSWORD: 12345678
 ###
 123
 LOGIN USER
